@@ -3,6 +3,7 @@ import './App.css'
 import praia from '/src/assets/paisagem-01.jpg'
 import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
+import CondicionalRender from './components/CondicionalRender'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
       */}
       <ManageData/>
       <ListRender/>
+      <CondicionalRender/>
     </>
   )
 }

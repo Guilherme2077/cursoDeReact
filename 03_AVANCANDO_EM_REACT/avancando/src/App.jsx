@@ -4,9 +4,11 @@ import praia from '/src/assets/paisagem-01.jpg'
 import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
 import CondicionalRender from './components/CondicionalRender'
+import ShowUserName from './components/ShowUserName'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const name = "Joaquim"
+  const [userName] = useState("Maria")
 
   return (
     <>
@@ -22,10 +24,12 @@ function App() {
       <div>
         <img src={praia} alt="Praia" />
       </div>
-      */}
+      
       <ManageData/>
       <ListRender/>
       <CondicionalRender/>
+      */}
+      <ShowUserName name={userName}/>
     </>
   )
 }

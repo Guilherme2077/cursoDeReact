@@ -5,6 +5,7 @@ import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
 import CondicionalRender from './components/CondicionalRender'
 import ShowUserName from './components/ShowUserName'
+import CarDetails from './components/CarDetails'
 
 function App() {
   const name = "Joaquim"
@@ -12,8 +13,8 @@ function App() {
 
   return (
     <>
+      {/* 
       <h1>Avançando no React</h1>
-      {/*
 
       Neste primeiro exemplo de imagem, estamos usando o próprio endereço da imagem para chamá-la. 
       <div>
@@ -28,8 +29,17 @@ function App() {
       <ManageData/>
       <ListRender/>
       <CondicionalRender/>
-      */}
+
+      // Props
       <ShowUserName name={userName}/>
+
+      // Desestructuring
+      <CarDetails brand='Volvo' km={20000} color="Azul"/>
+
+      // Reaproveitando */}
+      <CarDetails brand="Ford" km={50000} color="Esmeralda"/>
+      <CarDetails brand="VW" km={0} color="Azul Turquesa" newCar={true}/>
+      <CarDetails brand="Fiat" km={100000} color="Laranja Atômica"/>
     </>
   )
 }
